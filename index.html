@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Trello Requirements Helper Tool</title>
+    <meta name="description" content="This tool helps convert tabular field data to be ready for tickets.">
+    <meta name="author" content="Joe Choi">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <main role="main">
+        <div class="container">
+
+            <h1 class="mt-5">Trello Requirements Helper Tool</h1>
+            <p class="lead">Helps convert tabular field data to be ready for Trello tickets.</p>
+
+            <div class="row">
+                <div class="col-md">
+                    <h2>Tool</h2>
+
+                    <div class="form-group">
+                        <label for="inputText">Input</label>
+                        <textarea class="form-control" id="inputText" rows="10"
+                            placeholder="Insert your tabular data here."></textarea>
+                    </div>
+
+                    <button onclick="parseTrello()" class="btn btn-primary">Get Trello Text</button>
+
+                    <div class="form-group mt-5">
+                        <label for="inputText">Output</label>
+                        <textarea class="form-control" id="outputArea" rows="10" onclick="this.select()"
+                            readonly="readonly"></textarea>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Your tabular data should not have any line breaks and should be in the following format:</li>
+                        <table class="table mt-3">
+                            <thead>
+                                <tr>
+                                    <th>Field</th>
+                                    <th>Field Type</th>
+                                    <th>Required?</th>
+                                    <th>Helper Text</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Page Title</td>
+                                    <td>Plain Text, Short</td>
+                                    <td>Required</td>
+                                    <td>The title for the page.</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Description</td>
+                                    <td>Plain Text, Long</td>
+                                    <td>Not Required</td>
+                                    <td>The description for the page.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <li>Copy all table data except the table headings into the input box straight from the
+                            table</li>
+                        <li>Paste this text string into the <strong>Input</strong> textbox.</li>
+                        <li>Press the <strong>Get Trello Text</strong> button. The formatted text will be outputted below.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <script src="js/scripts.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
