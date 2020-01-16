@@ -5,8 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Trello Requirements Helper Tool</title>
-    <meta name="description" content="This tool helps convert tabular field data to be ready for tickets.">
+    <title>Development Requirements Helper Tool</title>
+    <meta name="description" content="This tool helps convert tabular field data to be ready for development tickets.">
     <meta name="author" content="Joe Choi">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -19,8 +19,8 @@
     <main role="main">
         <div class="container">
 
-            <h1 class="mt-5">Trello Requirements Helper Tool</h1>
-            <p class="lead">Helps convert content model table data to be ready for Trello tickets.</p>
+            <h1 class="mt-5">Development Requirements Helper Tool</h1>
+            <p class="lead">Helps convert content model table data to be ready for Jira or Trello tickets.</p>
 
             <div class="row">
                 <div class="col-md">
@@ -32,7 +32,7 @@
                             placeholder="Insert your tabular data here."></textarea>
                     </div>
 
-                    <button onclick="parseTrello()" class="btn btn-primary">Get Trello Text</button>
+                    <button onclick="parseRequirements()" class="btn btn-primary">Get Ticket Text</button>
 
                     <div class="form-group mt-5">
                         <label for="inputText">Output</label>
@@ -72,8 +72,9 @@
                         <li>Copy all your table data except the table headings straight from the
                             table.</li>
                         <li>Paste this text string into the <strong>Input</strong> textbox.</li>
-                        <li>Press the <strong>Get Trello Text</strong> button. The formatted text will be outputted
-                            below.</li>
+                        <li>Press the <strong>Get Ticket Text</strong> button. The
+                            formatted text will be outputted
+                            below. This text can be directly pasted in either Jira or Trello.</li>
                     </ol>
                 </div>
             </div>

@@ -1,10 +1,10 @@
 const STEP_STRINGS = [
     [
-        "* **", 
+        "* **",
         "** "
     ],
     [
-        "(", 
+        "(",
         "; "
     ],
     [
@@ -12,12 +12,12 @@ const STEP_STRINGS = [
         ")"
     ],
     [
-        "\n" + "  * **Helper Text**: ", 
+        "\n" + "  * **Helper Text**: ",
         "" + "\n"
     ]
 ];
 
-function parseTrello() {
+function parseRequirements() {
     let rawData = document.getElementById("inputText").value;
     let cleanedArray = cleanData(rawData);
     let splittedArray = splitArray(cleanedArray, STEP_STRINGS.length);
@@ -28,7 +28,7 @@ function parseTrello() {
 
 function cleanData(rawData) {
     let cleanedData = rawData.replace(/\t/g, "\n"); // replace tabs with newlines
-    cleanedData = cleanedData.trim().split("\n");   // split and trim
+    cleanedData = cleanedData.trim().split("\n"); // split and trim
     return cleanedData;
 }
 
