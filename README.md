@@ -1,2 +1,2 @@
 # Ticket Requirements Helper
-Helps convert tabular field data to be ready for development tickets.
+Helps convert content model data from tables to be ready for development tickets.
