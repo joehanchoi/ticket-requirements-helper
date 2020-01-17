@@ -50,7 +50,7 @@ function arrayToText(dataArray, constArray) {
 }
 
 window.onload = function() {
-  document.getElementById('parseButton').onclick = function parse() {
+  document.getElementById('parseButton').onclick = function() {
     parseRequirements('inputText', 'outputArea');
   };
 };
